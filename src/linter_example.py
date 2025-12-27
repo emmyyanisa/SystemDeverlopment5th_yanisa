@@ -1,11 +1,6 @@
-import os, sys
-
-
 def my_function(x, y):
     a = 1 + 2
-    print(
-        "Hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
-    )
+    print("Hello")
     return a
 
 
@@ -38,8 +33,10 @@ def b():
 def c():
     pass
 
+
 def d():
     pass
+
 
 def e():
     pass
