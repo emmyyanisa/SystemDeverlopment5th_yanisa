@@ -1,9 +1,13 @@
 """
 A simple calculator module with basic arithmetic operations.
 """
+
+
 class InvalidInputException(Exception):
     """Exception raised when input values are outside the valid range."""
+
     pass
+
 
 class Calculator:
     """Calculator class providing basic arithmetic operations."""
@@ -86,8 +90,3 @@ class Calculator:
         if b == 0:
             raise ValueError("CANNOT DIVIDE BY ZERO")
         return a / b
-
-
-
-
-

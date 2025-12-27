@@ -1,6 +1,7 @@
 """
 Calculator package.
 """
+
 from .calculator import Calculator, InvalidInputException
 
 __all__ = ["Calculator"]

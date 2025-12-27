@@ -5,15 +5,17 @@ Test suite for the Calculator class.
 import pytest
 from calculator import Calculator, InvalidInputException
 
+
 @pytest.fixture
 def calc():
     "Fixture to create instance test"
     return Calculator()
 
+
 class TestAddition:
     """Tests for the add method."""
 
-    def test_add_positive_numbers(self,calc):
+    def test_add_positive_numbers(self, calc):
         """Test adding two positive numbers."""
         # Arrange
         a = 5
@@ -26,7 +28,7 @@ class TestAddition:
         # Assert
         assert result == expected
 
-    def test_add_negative_numbers(self,calc):
+    def test_add_negative_numbers(self, calc):
         """Test adding two negative numbers."""
         # Arrange
         a = -5
@@ -39,7 +41,7 @@ class TestAddition:
         # Assert
         assert result == expected
 
-    def test_add_positive_and_negative(self,calc):
+    def test_add_positive_and_negative(self, calc):
         """Test adding positive and negative numbers."""
         # Arrange
         a = 5
@@ -52,7 +54,7 @@ class TestAddition:
         # Assert
         assert result == expected
 
-    def test_add_negative_and_positive(self,calc):
+    def test_add_negative_and_positive(self, calc):
         """Test adding negative and positive numbers."""
         # Arrange
         a = -5
@@ -65,7 +67,7 @@ class TestAddition:
         # Assert
         assert result == expected
 
-    def test_add_positive_with_zero(self,calc):
+    def test_add_positive_with_zero(self, calc):
         """Test adding positive number with zero."""
         # Arrange
         a = 5
@@ -78,7 +80,7 @@ class TestAddition:
         # Assert
         assert result == expected
 
-    def test_add_zero_with_positive(self,calc):
+    def test_add_zero_with_positive(self, calc):
         """Test adding zero with positive number."""
         # Arrange
         a = 0
@@ -91,7 +93,7 @@ class TestAddition:
         # Assert
         assert result == expected
 
-    def test_add_floats(self,calc):
+    def test_add_floats(self, calc):
         """Test adding floating point numbers."""
         # Arrange
         a = 2.5
@@ -108,10 +110,10 @@ class TestAddition:
 class TestSubtraction:
     """Tests for the subtract method."""
 
-    def test_subtract_positive_numbers(self,calc):
+    def test_subtract_positive_numbers(self, calc):
         """Test subtracting positive numbers."""
         # TODO: Implement
-        #Arrange
+        # Arrange
         calc = Calculator()
         a = 5
         b = 3
@@ -123,10 +125,11 @@ class TestSubtraction:
         # Assert
         assert result == expected
 
+
 class TestMultiplication:
     """Tests for the multiply method."""
 
-    def test_multiply_positive_numbers(self,calc):
+    def test_multiply_positive_numbers(self, calc):
         """Test multiplying positive numbers."""
         # TODO: Implement
         # Arrange
@@ -141,10 +144,11 @@ class TestMultiplication:
         # Assert
         assert result == expected
 
+
 class TestDivision:
     """Tests for the divide method."""
 
-    def test_divide_positive_numbers(self,calc):
+    def test_divide_positive_numbers(self, calc):
         """Test dividing positive numbers."""
         # TODO: Implement
         # Arrange
