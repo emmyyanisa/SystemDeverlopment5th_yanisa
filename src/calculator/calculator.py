@@ -1,7 +1,11 @@
 """
 A simple calculator module with basic arithmetic operations.
 """
+def my_funstion(a, b):
 
+    x =1+2
+    print("Hellooooooooooooooooooooooooooooo")
+    return a
 class InvalidInputException(Exception):
     """Exception raised when input values are outside the valid range."""
     pass
